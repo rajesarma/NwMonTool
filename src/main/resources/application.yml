@@ -1,0 +1,33 @@
+# SERVER =================================================================================
+server:
+  port: 8090
+  #error:
+  #  whitelabel:
+  #    enabled: false
+  #servlet:
+  #  context-path: /
+
+spring:
+
+# IDENTITY ===============================================================================
+  application:
+    name : nwmontool
+
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+  resources:
+    static-locations: classpath:/static/
+
+sak:
+  locations:
+    - location: Swamy
+      ips: 192.168.34.33,192.168.34.43
+    - location: Sreedhar
+      ips: 192.168.34.34,192.168.34.44
+    - location: Rajesh
+      ips: 192.168.34.35,192.168.34.45
+
+interval: 30000
